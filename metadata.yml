@@ -1,0 +1,23 @@
+title: tg.observer - A directory of Telegram channels
+description_html: |-
+        <p>tg.observer is a directory of public Telegram groups and channels, by scholars for scholars.</p>
+
+        <p>We are working to publish the following: Metadata about public groups and channels on Telegram and sampling process; A graph of connections between channels; Tools for helping you select sample of channels and assess sampling results.</p>
+
+        <p>At the moment we are making a dataset of over 120,000 Telegram channels publicly searchable.<p>
+
+        <form action="/tg-observer/telegram-channels" method="GET">
+          <p><input name="_search" placeholder="Search for telegram channels" type="search"> <input type="submit" value="Search"></p>
+        </form>
+about: AleksiKnuutila/tg_snowball
+about_url: https://github.com/AleksiKnuutila/tg_snowball/blob/main/README.md
+source: TGDataset
+source_url: https://arxiv.org/abs/2303.05345
+databases:
+  tg-observer:
+    hide_sql: true
+    tables:
+      telegram-channels:
+        facets:
+        - language
+        - topic
