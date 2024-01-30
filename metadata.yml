@@ -12,21 +12,26 @@ description_html: |-
         </p>
 
         <p>
-        You can read more about plans for tg.observer <a href="">here</a>
+        Read more about plans for tg.observer <a href="">here</a>.
         </p>
 
         <form action="/tg-observer/telegram-channels" method="GET">
           <p><input name="_search" placeholder="Search for telegram channels" type="search"> <input type="submit" value="Search"></p>
         </form>
-#about: AleksiKnuutila/tg_snowball
-#about_url: https://github.com/AleksiKnuutila/tg_snowball/blob/main/README.md
-#source: TGDataset
-#source_url: https://arxiv.org/abs/2303.05345
 databases:
-  tg-observer:
+  tg_observer:
     hide_sql: true
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/deed.en
+#    queries:
+#      channel-summary:
+#        sql: |-
+#          select username, n_subscribers, title, description, creation_date, language, topic, scam, verified 
+#          from [telegram-channels]
+#          order by n_subscribers desc
     tables:
-      telegram-channels:
+      telegram_channels:
+        sort_desc: n_subscribers
         facets:
         - language
         - topic
