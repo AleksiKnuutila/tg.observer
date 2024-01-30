@@ -9,15 +9,21 @@ description_html: |-
         This version of the site is a prototype.
         We are making use of <a href="https://arxiv.org/abs/2303.05345">TGDataset</a> and our own data collection.
         The site is built by <a href="https://knuutila.net">Aleksi Knuutila</a>.
-        </p>
-
-        <p>
         Read more about plans for tg.observer <a href="">here</a>.
         </p>
+
+        <br>
+        <hr>
+        <br>
+
 
         <form action="/tg-observer/telegram-channels" method="GET">
           <p><input name="_search" placeholder="Search for telegram channels" type="search"> <input type="submit" value="Search"></p>
         </form>
+        <p>
+        &#8594; <a href="/tg_observer/telegram_channels"><strong>Browse full directory of channels</strong></a>
+        </p>
+
 databases:
   tg_observer:
     hide_sql: true
